@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>uploadFile</title>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" id="uploadForm">
+    选择文件<input id='file' type="file" name="file"/>
+</form>
+<button id="uploadBtn" onclick="handleuploadBtnClick()">上传</button>
+</body>
+</html>
+<script>
+    function handleuploadBtnClick() {
+        var formData = new FormData($('#uploadForm')[0]);
+        $.ajax({
+            type:'post',
+            url:'{% url "upload" %}',
+            data: formData,
+            cache: false,
+            processData: false,
+            contentType: false,
+            beforeSend:function (xhr, settings) {
+                 xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+            }
+        }).success(function (data) {
+            alert(data)
+        }).error(function () {
+            alert('failed')
+        })
+
+    }
+</script>
