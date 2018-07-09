@@ -57,6 +57,7 @@ class SmsCodeViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
                 user.mobile = mobile
                 user.username = mobile
                 user.name = mobile
+                user.set_password('123456')
                 user.save()
             return Response({
                 'mobile':mobile

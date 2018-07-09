@@ -13,7 +13,7 @@ __business_id = uuid.uuid1()
 acs_client = AcsClient(sdkConfig.ACCESS_KEY_ID, sdkConfig.ACCESS_KEY_SECRET, REGION)
 region_provider.add_endpoint(PRODUCT_NAME, REGION, DOMAIN)
 
-def send_sms(phone_numbers, business_id=__business_id, sign_name='mshop', template_code='SMS_138465074',
+def send_sms(phone_numbers, business_id=__business_id, sign_name='mshop', template_code='SMS_138960001',
              template_param=None):
     smsRequest = SendSmsRequest.SendSmsRequest()
     # 申请的短信模板编码,必填

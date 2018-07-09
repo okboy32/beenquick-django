@@ -22,6 +22,7 @@ from rest_framework.routers import DefaultRouter
 from products.views import uploadFormView, CategoryViewSet, ProductsViewSet
 from rest_framework_jwt.views import obtain_jwt_token
 from users.views import SmsCodeViewSet, UserViewSet
+from user_operation.views import ShopcartViewSet
 
 router = DefaultRouter()
 
@@ -33,6 +34,8 @@ router.register(r'category', CategoryViewSet, base_name='category')
 router.register(r'products',ProductsViewSet, base_name='products')
 #用户接口
 router.register(r'user',UserViewSet, base_name="user")
+#购物车借口
+router.register(r'shopcart',ShopcartViewSet, base_name="shopcart")
 
 urlpatterns = [
     path('admin/', admin.site.urls),

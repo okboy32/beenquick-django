@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'corsheaders',
     'django_filters',
+    'user_operation'
 ]
 AUTH_USER_MODEL = 'users.UserProfile'
 MIDDLEWARE = [
@@ -85,7 +86,7 @@ WSGI_APPLICATION = 'beenquickServer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'beenqiuck',
+        'NAME': 'beenquick',
         'USER': 'root',
         'PASSWORD': 'zhang123',
         'HOST': 'localhost',

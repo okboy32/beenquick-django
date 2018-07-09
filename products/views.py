@@ -52,7 +52,7 @@ class CategoryViewSet(mixins.ListModelMixin,viewsets.GenericViewSet):
     queryset = Categorys.objects.filter(pcid='100002').all().order_by('sort')
     serializer_class = CategorysSerializer
 
-class ProductsViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+class ProductsViewSet(mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
 
     queryset = Products.objects.all().order_by('sort')
     serializer_class = ProductsSerializer

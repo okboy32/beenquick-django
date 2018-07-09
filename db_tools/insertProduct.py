@@ -36,8 +36,7 @@ for k,v in products.items():
         p.pre_imgs = product['pre_imgs']
         p.keywords = product['keywords']
         url = product['img'].replace('\\', '')
-        img = requests.get(url)
-        p.img = img.content()
+        p.img = url
         p.pid = product['category_id']
         p.children_pid = product['child_cid']
         p.save()
