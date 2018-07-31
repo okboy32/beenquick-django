@@ -24,3 +24,10 @@ class ProductsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Products
         fields = ('id','img','name','partner_price','market_price','specifics','brand_name','safe_day','safe_unit')
+
+
+class ProductsShopCartSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Products
+        fields = ('id','img','name','partner_price')

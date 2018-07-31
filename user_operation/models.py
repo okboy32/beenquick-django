@@ -12,6 +12,7 @@ class Shopcart(models.Model):
     user = models.ForeignKey(UserProfile, verbose_name='用户', on_delete=CASCADE)
     product = models.ForeignKey(Products, verbose_name='商品', on_delete=CASCADE)
     count = models.IntegerField(default=0, verbose_name='数量')
+    selected = models.BooleanField(default=True, verbose_name='是否选择')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     class Meta:
