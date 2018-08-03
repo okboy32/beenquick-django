@@ -40,14 +40,18 @@ router.register(r'shopcart',ShopcartViewSet, base_name="shopcart")
 #订单接口
 router.register(r'order', OrderInfoViewSet, base_name='order')
 
+from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('upload/',uploadFormView.as_view(),name='upload'),
-    url(r'^',include(router.urls)),
+    url(r'^api/',include(router.urls)),
 
     #配置django API 文档
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'docs/', include_docs_urls(title='爱鲜蜂')),
-    url(r'^login/', obtain_jwt_token),
+    url(r'^api/login/', obtain_jwt_token),
+
+    #配置app页面
+    url(r'^', index)
 ]
