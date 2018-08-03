@@ -1,6 +1,7 @@
 # beenquick-django
 
-此项目的前端页面:https://github.com/okboy32/beenquick
+此项目的前端页面（手机端）:
+https://github.com/okboy32/beenquick
 
 基于django实现仿爱鲜蜂
 
