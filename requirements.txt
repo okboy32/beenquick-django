@@ -1,0 +1,15 @@
+django
+django-rest-framework
+django-crispy-forms
+django-guardian
+django-filter
+django-filter
+coreapi
+Markdown
+django-cors-headers
+mysqlclient
+celery
+lxml
+redis
+pyjwt
+Pillow

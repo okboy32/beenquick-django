@@ -17,7 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/extre_apps" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 conda base" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.2 (sftp://root@120.79.0.254:22/usr/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

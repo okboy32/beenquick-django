@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="afd0bc31-c748-4796-be3b-fc4908878e5e" name="120.79.0.254" url="http://120.79.0.254">
+        <fileTransfer host="120.79.0.254" port="22" privateKey="C:\Users\Administrator\Desktop\zl2.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
