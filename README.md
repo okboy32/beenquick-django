@@ -8,3 +8,5 @@ https://github.com/okboy32/beenquick
 api：http://120.79.0.254/api/
 
 接口文档: http://120.79.0.254/docs/
+
+(手机端) 预览: http://120.79.0.254/
